@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using MVCFilters.Models.Filters;
+using System.Web;
 using System.Web.Mvc;
 
 namespace MVCFilters
@@ -8,6 +9,7 @@ namespace MVCFilters
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {   
             filters.Add(new HandleErrorAttribute());
+            filters.Add(new LogActionFilter());
         }
     }
 }

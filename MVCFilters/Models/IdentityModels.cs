@@ -21,6 +21,7 @@ namespace MVCFilters.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<ActionLog> ActionLogs { get; set; }
+        public DbSet<ExceptionLog> ExceptionLogs { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

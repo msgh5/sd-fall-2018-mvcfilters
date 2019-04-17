@@ -19,6 +19,8 @@ namespace MVCFilters.Controllers
 
         public ActionResult Index()
         {
+            throw new Exception("Testing my exception filter");
+
             //CreateLog("Index", "Home");
 
             return View();
